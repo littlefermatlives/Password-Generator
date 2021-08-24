@@ -15,6 +15,8 @@ for i in range(nr_symbols):
     lst.append(random.choice(symbols))
 for i in range(nr_numbers):
     lst.append(random.choice(numbers))
+
+random.shuffle(lst)
 print("Your Password is ->")
 print(*lst,sep="")
 # print(''.join(lst))
